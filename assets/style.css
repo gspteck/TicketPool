@@ -41,9 +41,20 @@ nav {
     position: absolute;
     top: 42%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -42%);
     font-weight: lighter;
-    font-size: 5rem;
+    font-size: 6rem;
+    color: black;
+}
+.big-text-background {
+    background-color: transparent;
+    border: 10px solid black;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    width: 40rem;
+    height: 10rem;
 }
 .intro {
     background: black;
@@ -80,7 +91,6 @@ nav {
 }
 .home-button {
     background-color:#d37b66;
-    border: none;
     color: white;
     padding: 10px 21px;
     text-align: center;
