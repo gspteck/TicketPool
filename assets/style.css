@@ -74,3 +74,8 @@ nav {
     transform: translateY(100%);
     display: inline-block;
 }
+
+.ad {
+    min-height: 1rem;
+    background: #612a1d;
+}
