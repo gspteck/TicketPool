@@ -9,7 +9,3 @@ tl.fromTo('.big-text', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.home-button', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 
 //
-
-function home() {
-    window.open("./index.html","_self")
-}
