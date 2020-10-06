@@ -10,16 +10,9 @@ a {
     color: black;
     text-decoration: none;
 }
-.home_landing {
+.landing {
     min-height: 100vh;
     background: url(./images/tickets1.png);
-    background-size: cover;
-    padding: 5rem 6rem;
-    color: black;
-}
-.account_landing {
-    min-height: 100vh;
-    background: url(./images/tickets2.png);
     background-size: cover;
     padding: 5rem 6rem;
     color: black;
@@ -111,4 +104,8 @@ nav {
     transform: translate(-50%, -30%);
     border-radius: 30px;
     border: 2px solid #612a1d;
+}
+.nav-button {
+    background-image: url(./images/ticket_button.png);
+    background-repeat: no-repeat;
 }

@@ -6,18 +6,18 @@
     </head>
     <body onload="home_load()">
         <main>
-            <section class="home_landing">
+            <section class="landing">
                 <nav>
                     <h1 id="logo"><a href="./index.html">TicketPool</a></h1>
                     <ul class="nav-links">
-                        <li><a href="./assets/withdrawl.html">Tickets: <b id="ticket_num"></b></a></li>
-                        <li><a href="./assets/account.html">Account</a></li>
-                        <li><a href="./assets/about.html">About</a></li>
+                        <li><button class="nav-button" onclick="open_withdrawl()">Tickets: <b id="ticket_num"></b></button></li>
+                        <li><button class="nav-button" onclick="open_account()">Account</button></li>
+                        <li><button class="nav-button" onclick="open_about()">About</button></li>
                     </ul>
                 </nav>
                 <h2 class="big-text">Ticket Pool</h2>
                 <div class="big-text-box"></div>
-                <a href="./assets/earn.html"><button class="home-button">Start Earning Tickets</button></a>
+                <a href="" onclick="open_earn()"><button class="home-button">Start Earning Tickets</button></a>
             </section>
             <div class="intro">
                 <div class="intro-text">
@@ -35,7 +35,21 @@
             <div class="slider"></div>            
         </main>
 
-        
+        <div class="withdrawl">
+            <h1>withdrawl test</h1>
+        </div>
+
+        <div class="account">
+            <h1>account test</h1>
+        </div>
+
+        <div class="about">
+            <h1>about test</h1>
+        </div>
+
+        <div class="earn">
+            <h1>earn test</h1>
+        </div>
 
         <!--GSAP (animation library)-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>

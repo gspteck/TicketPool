@@ -10,6 +10,38 @@ function home_load() {
     tl.fromTo('.home-button', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 }
 
-function account_load() {
-    tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1});
+function open_withdrawl() {
+    var x = document.getElementsByClassName("withdrawl");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function open_account() {
+    var x = document.getElementsByClassName("account");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function open_about() {
+    var x = document.getElementsByClassName("about");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function open_earn() {
+    var x = document.getElementsByClassName("earn");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
