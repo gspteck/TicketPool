@@ -10,3 +10,6 @@ function home_load() {
     tl.fromTo('.home-button', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 }
 
+function account_load() {
+    tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1});
+}

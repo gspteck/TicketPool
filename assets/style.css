@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    font-family: 'Heebo', sans-serif;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.home_landing {
+    min-height: 100vh;
+    background: url(./images/tickets1.png);
+    background-size: cover;
+    padding: 5rem 6rem;
+    color: black;
+}
+.account_landing {
+    min-height: 100vh;
+    background: url(./images/tickets2.png);
+    background-size: cover;
+    padding: 5rem 6rem;
+    color: black;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    padding-left: 10rem;
+    font-style: 1.2rem;
+}
+#logo {
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.big-text {
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    font-weight: lighter;
+    font-size: 6rem;
+    color: black;
+}
+.big-text-box {
+    background-color: transparent;
+    border: 10px solid black;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    width: 40rem;
+    height: 10rem;
+}
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text {
+    color: #C6563B;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2.5rem;
+}
+.slider {
+    background: #612a1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.hide {
+    background: black;
+    overflow: hidden;
+}
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+.home-button {
+    background-color:#d37b66;
+    color: white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    border-radius: 30px;
+    border: 2px solid #612a1d;
+}
