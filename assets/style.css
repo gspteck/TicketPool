@@ -14,7 +14,7 @@ a {
     min-height: 100vh;
     background: url(./images/tickets1.png);
     background-size: cover;
-    padding: 5rem 6rem;
+    padding: 3rem 5rem;
     color: black;
 }
 nav {
@@ -55,6 +55,9 @@ nav {
     transform: translate(-50%, -42%);
     width: 40rem;
     height: 10rem;
+}
+.big-text-box-layer {
+    opacity: 0.77;
 }
 .intro {
     background: black;
@@ -104,8 +107,4 @@ nav {
     transform: translate(-50%, -30%);
     border-radius: 30px;
     border: 2px solid #612a1d;
-}
-.nav-button {
-    background-image: url(./images/ticket_button.png);
-    background-repeat: no-repeat;
 }
