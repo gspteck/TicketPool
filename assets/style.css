@@ -25,11 +25,14 @@ nav {
 }
 .nav-links {
     display: flex;
-    list-style: none;
+    list-style: none;    
 }
 .nav-links li {
     padding-left: 10rem;
-    font-size: 1.2rem;
+    font-size: 1.2rem;  
+}
+.nav-links div {      
+    cursor: pointer;
 }
 #logo {
     font-family: 'Lobster', cursive;
@@ -107,4 +110,8 @@ nav {
     transform: translate(-50%, -30%);
     border-radius: 30px;
     border: 2px solid #612a1d;
+    cursor: pointer;
+}
+#add-section {
+    
 }
