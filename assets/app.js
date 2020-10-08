@@ -88,7 +88,7 @@ function timer() {
     add_tickets()
 }
 function add_tickets() {
-    tikets = tickets + 2;
+    tickets = tickets + 2;
     var add = document.getElementById("ticket_num");
     add.innerHTML = tickets;
     timer();
