@@ -78,7 +78,18 @@ function open_earn() {
     ad3 = ads2[random_num + 1];
     add.innerHTML = '<center><br><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj1jjqEw6eMuMsoGykrygkBgVarXYN0Pu&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>' + ad1 + '<br><button class="home-button" style="top: 90%;" onclick="stop_earn()">Stop Earning</button></center>';
     window.open(link);
+    timer();
 }
 function stop_earn() {
     location.reload();
+}
+function timer() {
+    
+    add_tickets()
+}
+function add_tickets() {
+    tikets = tickets + 2;
+    var add = document.getElementById("ticket_num");
+    add.innerHTML = tickets;
+    timer();
 }
