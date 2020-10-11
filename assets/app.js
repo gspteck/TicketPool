@@ -10,17 +10,20 @@ tl.fromTo('.home-button', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.home-button2', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('footer', {opacity: 0}, {opacity: 1, duration: 1});
 
-var links = [ //33
-    'https://cb.run/4rQs','https://cb.run/9MGY','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://csgofly.com/r/gsp',
-    'https://cb.run/GhAN','https://cb.run/mVtg','https://cb.run/ROnp','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
+var links = [ //57
+    'https://cb.run/4rQs','https://crlt.co/9tuQ','https://cb.run/9MGY','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://crlt.co/9tuQ',
+    'https://csgofly.com/r/gsp','https://cb.run/GhAN','https://cb.run/mVtg','https://cb.run/ROnp','https://crlt.co/9tuQ','https://crlt.co/9tuQ',
+    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://crlt.co/9tuQ','https://crlt.co/9tuQ','https://crlt.co/9tuQ','https://crlt.co/9tuQ',
     'https://cash-ads.com/?ref=3948','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://jpconstruction.altervista.org',
-    'https://cb.run/9KnF','https://cb.run/EeX7','https://cb.run/hoj0','https://inorangepie.biz/12956821','https://clicksgenie.com/register.aspx?u=37232',
-    'https://r.honeygain.money/REIUT0A0','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','http://adsgamer.altervista.org',
-    'https://2captcha.com?from=8848127','https://www.submithub.com/by/gsp', 'https://www.joingiveaways.com/miner.php?u=76561198869571841',
-    'https://surfe.be/ext/290563','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://freebitco.in/?r=23418056',
-    'https://radioearn.com/?ref=31176','http://www.fiverr.com/s2/35d0de1b44','http://join-shortest.com/ref/6570218369?user-type=new','https://cb.run/8KuT',
-    'https://cash-ads.com/?ref=3948', 'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://www.rollbit.com/r/gsp',
-    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://yllix.com/388948/',
+    'https://cb.run/9KnF','https://crlt.co/9tuQ','https://cb.run/EeX7','https://cb.run/hoj0','https://inorangepie.biz/12956821','https://crlt.co/9tuQ',
+    'https://clicksgenie.com/register.aspx?u=37232','https://crlt.co/9tuQ','https://crlt.co/9tuQ','https://crlt.co/9tuQ','https://crlt.co/9tuQ',
+    'https://r.honeygain.money/REIUT0A0','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','http://adsgamer.altervista.org','https://crlt.co/9tuQ',
+    'https://2captcha.com?from=8848127','https://crlt.co/9tuQ','https://www.submithub.com/by/gsp', 'https://www.joingiveaways.com/miner.php?u=76561198869571841',
+    'https://surfe.be/ext/290563','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://freebitco.in/?r=23418056','https://crlt.co/9tuQ',
+    'https://radioearn.com/?ref=31176','https://crlt.co/9tuQ','http://www.fiverr.com/s2/35d0de1b44','http://join-shortest.com/ref/6570218369?user-type=new',
+    'https://cb.run/8KuT','https://cash-ads.com/?ref=3948','https://crlt.co/9tuQ','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
+    'https://www.rollbit.com/r/gsp','https://crlt.co/9tuQ','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://yllix.com/388948/',
+    'https://crlt.co/9tuQ','https://crlt.co/9tuQ','https://crypto-loot.com/ref.php?go=27e53831e7e7e9403c8ccda236435ac0','https://crlt.co/9tuQ',
 ]
 
 var ads1 = [ //23
