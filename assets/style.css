@@ -105,10 +105,50 @@ nav {
     font-size: 25px;
     font-family: 'Heebo', sans-serif;
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -30%);
     border-radius: 30px;
     border: 2px solid #612a1d;
     cursor: pointer;
+}
+.home-button2 {
+    background-color:#d37b66;
+    color: white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    border-radius: 30px;
+    border: 2px solid #612a1d;
+    cursor: pointer;
+}
+footer {
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+.footer-link {
+    color: #C6563B;
+    text-decoration: none;
+}
+.footer-background {
+    background-color:black;
+    opacity: 0.95;
+    position: absolute;
+    top: 49.5%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50.5%);
+    width: 60rem;
+    height: 2.5rem;
 }
