@@ -101,10 +101,19 @@ function remove_nav() {
     var element = document.getElementById('nav');
     element.parentNode.removeChild(element);
 }
+function remove_footer() {
+    var element = document.getElementById('footer');
+    element.parentNode.removeChild(element);
+}
 function open_tickets() {
     remove_section();
+    remove_nav();
+    remove_footer();
     var add = document.getElementById("add-section");
-    add.innerHTML = '';
+    random_num = Math.floor((Math.random() * 21) + 0);
+    ad1 = ads1[random_num];
+    ad2 = ads1[random_num + 1];
+    add.innerHTML = '<center><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br>' + ad1 + '<h2>Purchase Tickets</h2><div class="columns"><ul class="price"><li class="header">20 tickets</li><li class="grey">$0,10</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">100 tickets</li><li class="grey">$0,50</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">200 tickets</li><li class="grey">$1,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 tickets</li><li class="grey">$5,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 tickets</li><li class="grey">$10,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 tickets</li><li class="grey">$50,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div>' + ad2 + '<br></center>';
 }
 function open_account() {
     remove_section();
@@ -142,7 +151,4 @@ function tickets() {
         window.open(link_loop);
     }, 600000);
     
-}
-function reset_tickets() {
-    localStorage.removeItem("tickets");
 }
