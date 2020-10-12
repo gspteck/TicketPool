@@ -5,12 +5,13 @@ app.disableHardwareAcceleration()
 
 function createWindow () {
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  const mainWindow = new BrowserWindow({    
+    width: 1200,
+    height: 700,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   });
-  mainWindow.maximize();
   mainWindow.setMenuBarVisibility(false),
 
   // and load the index.html of the app.

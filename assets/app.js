@@ -97,6 +97,10 @@ function remove_section() {
     var element = document.getElementById('home-section');
     element.parentNode.removeChild(element);
 }
+function remove_nav() {
+    var element = document.getElementById('nav');
+    element.parentNode.removeChild(element);
+}
 function open_tickets() {
     remove_section();
     var add = document.getElementById("add-section");
@@ -114,11 +118,12 @@ function open_about() {
 }
 function open_earn() {
     remove_section();
+    remove_nav();
     var add = document.getElementById("add-section");
     random_num = Math.floor((Math.random() * 21) + 0);
     link = links[random_num];
     ad1 = ads1[random_num];
-    add.innerHTML = '<center><br><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj1jjqEw6eMuMsoGykrygkBgVarXYN0Pu&index=' + random_num + '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>' + ad1 + '<button class="home-button" style="top: 85%;" onclick="stop_earn()">Stop Earning</button></center>';
+    add.innerHTML = '<center><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj1jjqEw6eMuMsoGykrygkBgVarXYN0Pu&index=' + random_num + '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>' + ad1 + '<button class="home-button" style="top: 85%;" onclick="stop_earn()">Stop Earning</button></center>';
     window.open(link);
     tickets();
 }
@@ -126,12 +131,15 @@ function stop_earn() {
     location.reload();
 }
 function tickets() {
-    var add = document.getElementById("ticket_num");
+    var add = document.getElementById("earn_balance");
+    random_num_loop = Math.floor((Math.random() * 21) + 0);
+    link_loop = links[random_num_loop];
     balance = balance + 2;
     setTimeout(() => {
         localStorage.setItem("tickets", balance);
         add.innerHTML = balance;
         tickets();
+        window.open(link_loop);
     }, 600000);
     
 }
