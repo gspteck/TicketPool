@@ -155,7 +155,23 @@ footer {
 #earn_balance {
     font-family: 'Heebo', sans-serif;
 }
-
+.back-button {
+    background-color:#d37b66;
+    color: white;
+    padding: 5px 10.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transform: translate(-85%, -85%);
+    border-radius: 10px;
+    border: 2px solid #612a1d;
+    cursor: pointer;
+}
 /*Price tables*/
 .columns {
     float: left;
@@ -188,7 +204,7 @@ footer {
     font-size: 25px;
 }
 .button {
-    background-color: #4CAF50;
+    background-color: #d37b66;
     border: none;
     color: white;
     padding: 5px 12.5px;

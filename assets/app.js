@@ -10,20 +10,75 @@ tl.fromTo('.home-button', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.home-button2', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('footer', {opacity: 0}, {opacity: 1, duration: 1});
 
-var links = [ //57
-    'https://cb.run/4rQs','https://crlt.co/9tuQ','https://cb.run/9MGY','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://crlt.co/9tuQ',
-    'https://csgofly.com/r/gsp','https://cb.run/GhAN','https://cb.run/mVtg','https://cb.run/ROnp','https://crlt.co/9tuQ','https://crlt.co/9tuQ',
-    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://crlt.co/9tuQ','https://crlt.co/9tuQ','https://crlt.co/9tuQ','https://crlt.co/9tuQ',
-    'https://cash-ads.com/?ref=3948','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://jpconstruction.altervista.org',
-    'https://cb.run/9KnF','https://crlt.co/9tuQ','https://cb.run/EeX7','https://cb.run/hoj0','https://inorangepie.biz/12956821','https://crlt.co/9tuQ',
-    'https://clicksgenie.com/register.aspx?u=37232','https://crlt.co/9tuQ','https://crlt.co/9tuQ','https://crlt.co/9tuQ','https://crlt.co/9tuQ',
-    'https://r.honeygain.money/REIUT0A0','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','http://adsgamer.altervista.org','https://crlt.co/9tuQ',
-    'https://2captcha.com?from=8848127','https://crlt.co/9tuQ','https://www.submithub.com/by/gsp', 'https://www.joingiveaways.com/miner.php?u=76561198869571841',
-    'https://surfe.be/ext/290563','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://freebitco.in/?r=23418056','https://crlt.co/9tuQ',
-    'https://radioearn.com/?ref=31176','https://crlt.co/9tuQ','http://www.fiverr.com/s2/35d0de1b44','http://join-shortest.com/ref/6570218369?user-type=new',
-    'https://cb.run/8KuT','https://cash-ads.com/?ref=3948','https://crlt.co/9tuQ','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
-    'https://www.rollbit.com/r/gsp','https://crlt.co/9tuQ','https://goraps.com/fullpage.php?section=General&pub=388948&ga=g','https://yllix.com/388948/',
-    'https://crlt.co/9tuQ','https://crlt.co/9tuQ','https://crypto-loot.com/ref.php?go=27e53831e7e7e9403c8ccda236435ac0','https://crlt.co/9tuQ',
+var links = [ //67
+    'https://cb.run/4rQs',
+    'https://crlt.co/9tuQ',
+    'https://cb.run/9MGY',
+    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
+    'https://crlt.co/9tuQ',
+    'https://csgofly.com/r/gsp',
+    'https://cb.run/GhAN',
+    'https://cb.run/mVtg',
+    'https://cb.run/ROnp',
+    'https://crlt.co/9tuQ',
+    'https://crlt.co/9tuQ',
+    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
+    'https://crlt.co/9tuQ',
+    'https://crlt.co/9tuQ',
+    'https://crlt.co/9tuQ',
+    'https://crlt.co/9tuQ',
+    'https://cash-ads.com/?ref=3948',
+    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
+    'https://jpconstruction.altervista.org',
+    'https://cb.run/9KnF',
+    'https://crlt.co/9tuQ',
+    'https://cb.run/EeX7',
+    'https://cb.run/hoj0',
+    'https://inorangepie.biz/12956821',
+    'https://crlt.co/9tuQ',
+    'https://clicksgenie.com/register.aspx?u=37232',
+    'http://adsgamer.altervista.org/miner.html',
+    'https://crlt.co/9tuQ',
+    'https://crlt.co/9tuQ',
+    'https://crlt.co/9tuQ',
+    'https://crlt.co/9tuQ',
+    'https://r.honeygain.money/REIUT0A0',
+    'http://adsgamer.altervista.org/miner.html',
+    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
+    'http://adsgamer.altervista.org',
+    'https://crlt.co/9tuQ',
+    'https://2captcha.com?from=8848127',
+    'http://adsgamer.altervista.org/miner.html',
+    'https://crlt.co/9tuQ',
+    'https://www.submithub.com/by/gsp',
+    'https://www.joingiveaways.com/miner.php?u=76561198869571841',
+    'https://surfe.be/ext/290563',
+    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
+    'https://freebitco.in/?r=23418056',
+    'https://crlt.co/9tuQ',
+    'https://radioearn.com/?ref=31176',
+    'http://adsgamer.altervista.org/miner.html',
+    'https://crlt.co/9tuQ',
+    'http://www.fiverr.com/s2/35d0de1b44',
+    'http://join-shortest.com/ref/6570218369?user-type=new',
+    'https://cb.run/8KuT',
+    'https://cash-ads.com/?ref=3948',
+    'https://crlt.co/9tuQ',
+    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
+    'https://www.rollbit.com/r/gsp',
+    'https://crlt.co/9tuQ',
+    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
+    'https://yllix.com/388948/',
+    'https://crlt.co/9tuQ',
+    'https://crlt.co/9tuQ',
+    'https://crypto-loot.com/ref.php?go=27e53831e7e7e9403c8ccda236435ac0',
+    'https://crlt.co/9tuQ',
+    'https://www.instagram.com/giosaia',
+    'https://www.instagram.com/amagliett',
+    'https://www.instagram.com/soothinglooks',
+    'https://crlt.co/9tuQ',
+    'https://www.instagram.com/robertodidio_1',
+    'http://adsgamer.altervista.org/miner.html',
 ]
 
 var ads1 = [ //23
@@ -113,7 +168,7 @@ function open_tickets() {
     random_num = Math.floor((Math.random() * 21) + 0);
     ad1 = ads1[random_num];
     ad2 = ads1[random_num + 1];
-    add.innerHTML = '<center><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br>' + ad1 + '<h2>Purchase Tickets</h2><div class="columns"><ul class="price"><li class="header">20 tickets</li><li class="grey">$0,10</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">100 tickets</li><li class="grey">$0,50</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">200 tickets</li><li class="grey">$1,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 tickets</li><li class="grey">$5,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 tickets</li><li class="grey">$10,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 tickets</li><li class="grey">$50,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div>' + ad2 + '<br></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><h1>Purchase Tickets</h1><br><div class="columns"><ul class="price"><li class="header">20 tickets</li><li class="grey">$0,10</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">100 tickets</li><li class="grey">$0,50</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">200 tickets</li><li class="grey">$1,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 tickets</li><li class="grey">$5,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 tickets</li><li class="grey">$10,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 tickets</li><li class="grey">$50,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><br>' + ad2 + '<br><br></center>';
 }
 function open_account() {
     remove_section();
@@ -132,11 +187,11 @@ function open_earn() {
     random_num = Math.floor((Math.random() * 21) + 0);
     link = links[random_num];
     ad1 = ads1[random_num];
-    add.innerHTML = '<center><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj1jjqEw6eMuMsoGykrygkBgVarXYN0Pu&index=' + random_num + '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>' + ad1 + '<button class="home-button" style="top: 85%;" onclick="stop_earn()">Stop Earning</button></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj1jjqEw6eMuMsoGykrygkBgVarXYN0Pu&index=' + random_num + '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>' + ad1 + '<button class="home-button" style="top: 85%;" onclick="back_home()">Stop Earning</button></center>';
     window.open(link);
     tickets();
 }
-function stop_earn() {
+function back_home() {
     location.reload();
 }
 function tickets() {
