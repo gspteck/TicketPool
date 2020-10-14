@@ -10,11 +10,10 @@ tl.fromTo('.home-button', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.home-button2', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('footer', {opacity: 0}, {opacity: 1, duration: 1});
 
-var links = [ //67
+var links = [ //72
     'https://cb.run/4rQs',
     'https://crlt.co/9tuQ',
     'https://cb.run/9MGY',
-    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
     'https://crlt.co/9tuQ',
     'https://csgofly.com/r/gsp',
     'https://cb.run/GhAN',
@@ -22,15 +21,14 @@ var links = [ //67
     'https://cb.run/ROnp',
     'https://crlt.co/9tuQ',
     'https://crlt.co/9tuQ',
-    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
     'https://crlt.co/9tuQ',
     'https://crlt.co/9tuQ',
     'https://crlt.co/9tuQ',
     'https://crlt.co/9tuQ',
     'https://cash-ads.com/?ref=3948',
-    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
     'https://jpconstruction.altervista.org',
     'https://cb.run/9KnF',
+    'https://app.stormgain.com/friend/BNS14280379',
     'https://crlt.co/9tuQ',
     'https://cb.run/EeX7',
     'https://cb.run/hoj0',
@@ -42,9 +40,9 @@ var links = [ //67
     'https://crlt.co/9tuQ',
     'https://crlt.co/9tuQ',
     'https://crlt.co/9tuQ',
+    'https://app.stormgain.com/friend/BNS14280379',
     'https://r.honeygain.money/REIUT0A0',
     'http://adsgamer.altervista.org/miner.html',
-    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
     'http://adsgamer.altervista.org',
     'https://crlt.co/9tuQ',
     'https://2captcha.com?from=8848127',
@@ -53,7 +51,6 @@ var links = [ //67
     'https://www.submithub.com/by/gsp',
     'https://www.joingiveaways.com/miner.php?u=76561198869571841',
     'https://surfe.be/ext/290563',
-    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
     'https://freebitco.in/?r=23418056',
     'https://crlt.co/9tuQ',
     'https://radioearn.com/?ref=31176',
@@ -62,12 +59,11 @@ var links = [ //67
     'http://www.fiverr.com/s2/35d0de1b44',
     'http://join-shortest.com/ref/6570218369?user-type=new',
     'https://cb.run/8KuT',
+    'https://app.stormgain.com/friend/BNS14280379',
     'https://cash-ads.com/?ref=3948',
     'https://crlt.co/9tuQ',
-    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
     'https://www.rollbit.com/r/gsp',
     'https://crlt.co/9tuQ',
-    'https://goraps.com/fullpage.php?section=General&pub=388948&ga=g',
     'https://yllix.com/388948/',
     'https://crlt.co/9tuQ',
     'https://crlt.co/9tuQ',
@@ -77,8 +73,10 @@ var links = [ //67
     'https://www.instagram.com/amagliett',
     'https://www.instagram.com/soothinglooks',
     'https://crlt.co/9tuQ',
+    'https://app.stormgain.com/friend/BNS14280379',
     'https://www.instagram.com/robertodidio_1',
     'http://adsgamer.altervista.org/miner.html',
+    'https://app.stormgain.com/friend/BNS14280379',
 ]
 
 var ads1 = [ //23
@@ -165,18 +163,47 @@ function open_tickets() {
     remove_nav();
     remove_footer();
     var add = document.getElementById("add-section");
-    random_num = Math.floor((Math.random() * 21) + 0);
+    random_num = Math.floor((Math.random() * 23) + 0);
     ad1 = ads1[random_num];
     ad2 = ads1[random_num + 1];
     add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><h1>Purchase Tickets</h1><br><div class="columns"><ul class="price"><li class="header">20 tickets</li><li class="grey">$0,10</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">100 tickets</li><li class="grey">$0,50</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">200 tickets</li><li class="grey">$1,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 tickets</li><li class="grey">$5,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 tickets</li><li class="grey">$10,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 tickets</li><li class="grey">$50,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><br>' + ad2 + '<br><br></center>';
 }
 function open_account() {
     remove_section();
+    remove_nav();
+    remove_footer();
     var add = document.getElementById("add-section");
-    add.innerHTML = '';
+    localStorage.getItem("email"); //import email
+    if (localStorage.getItem("email") == null) {
+        
+    }
+    else {
+        var email = localStorage.getItem("email");
+    }
+    localStorage.getItem("tot_points"); //import total points
+    if (localStorage.getItem("tot_points") == null) {
+        var tot_points = 0;
+        localStorage.setItem("tot_points", tot_points);
+    }
+    else {
+        var tot_points = localStorage.getItem("tot_points");
+    }
+    localStorage.getItem("tot_wins"); //import total wins
+    if (localStorage.getItem("tot_wins") == null) {
+        var tot_wins = 0;
+        localStorage.setItem("tot_wins", tot_wins);
+    }
+    else {
+        var tot_wins = localStorage.getItem("tot_wins");
+    }
+    random_num = Math.floor((Math.random() * 23) + 0);
+    ad1 = ads1[random_num];
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><br><br><br><h2>Email:<br><b>' + email + '</b></h2><br><br><h1>Payment Preferences</h1><br><br><h2>Total Earned Points:<br><b id="tot_points"></b></h2><br><h2>Total Winning Tickets:<br><b id="num_winning_tickets"></b></h2><br><br>' + ad1 + '<br><br></center>';
 }
 function open_about() {
     remove_section();
+    remove_nav();
+    remove_footer();
     var add = document.getElementById("add-section");
     add.innerHTML = '';
 }
@@ -184,10 +211,10 @@ function open_earn() {
     remove_section();
     remove_nav();
     var add = document.getElementById("add-section");
-    random_num = Math.floor((Math.random() * 21) + 0);
+    random_num = Math.floor((Math.random() * 23) + 0);
     link = links[random_num];
     ad1 = ads1[random_num];
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj1jjqEw6eMuMsoGykrygkBgVarXYN0Pu&index=' + random_num + '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>' + ad1 + '<button class="home-button" style="top: 85%;" onclick="back_home()">Stop Earning</button></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj1jjqEw6eMuMsoGykrygkBgVarXYN0Pu&index=' + random_num + '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>' + ad1 + '<button class="home-button" style="top: 85%;" onclick="back_home()">Stop Earning</button></center>';
     window.open(link);
     tickets();
 }
@@ -196,14 +223,11 @@ function back_home() {
 }
 function tickets() {
     var add = document.getElementById("earn_balance");
-    random_num_loop = Math.floor((Math.random() * 21) + 0);
-    link_loop = links[random_num_loop];
     balance = balance + 2;
     setTimeout(() => {
         localStorage.setItem("tickets", balance);
         add.innerHTML = balance;
         tickets();
-        window.open(link_loop);
     }, 600000);
     
 }
