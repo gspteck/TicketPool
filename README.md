@@ -7,6 +7,7 @@ The user earns tickets by viewing ads and watching sponsored YouTube videos.
 Every month one ticket is choosen randomly and the winner gets 15$.
 
 Disclaimer!
+
 This is just an example project for developers that use ElectronJS, or any other developing language for that matter, as an example of a service they can provide to the community (a passive earning experience for the average user and a positive growth for YouTubers!).
 We do not actually give out rewards if you use this software.
 The videos displayed in the YouTube playlist embeded in this software are not actually sponsored, just random.
