@@ -3,8 +3,8 @@
 TicketPool was created using [ElectronJS](https://www.electronjs.org) - [GitHub Repository](https://github.com/electron)
 
 The software was created as an alternative to the lottery so users don't have to actually pay any money for lottery tickets.
-The user earns tickets by viewing ads and watching sponsored YouTube videos.
-Every month one ticket is choosen randomly and the winner gets 15$.
+The user earns tickets by viewing ads, sponsored links and watching sponsored YouTube videos.
+Every 1.000 tickets, one ticket is choosen randomly and the winner gets 15$.
 
 ## Disclaimer!
 

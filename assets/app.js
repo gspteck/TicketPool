@@ -353,7 +353,7 @@ function open_about() {
     remove_nav();
     remove_footer();
     var add = document.getElementById("add-section");
-    add.innerHTML = '';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><br><br><iframe src="./README.md" width="850" height="500" style="background-color: #b46b59;"></iframe></center>';
 }
 function open_earn() {
     remove_section();
@@ -378,4 +378,7 @@ function tickets() {
         tickets();
     }, 600000);
     
+}
+function extraction() {
+
 }
