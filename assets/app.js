@@ -10,26 +10,26 @@ tl.fromTo('.home-button', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.home-button2', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('footer', {opacity: 0}, {opacity: 1, duration: 1});
 
-var links = [ //72
+var links = [ //79
     'https://cb.run/4rQs',
     'https://crlt.co/9tuQ',
+    'https://teespring.com/do-it-4-the-pizza?tsmac=store&tsmic=awsomets-3&pid=389&cid=100029',
     'https://cb.run/9MGY',
     'https://crlt.co/9tuQ',
     'https://csgofly.com/r/gsp',
     'https://cb.run/GhAN',
+    'https://teespring.com/it/stores/awsomets-3',
     'https://cb.run/mVtg',
     'https://cb.run/ROnp',
     'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
+    'https://teespring.com/worldwide-survivor?tsmac=store&tsmic=awsomets-3&pid=389&cid=100019',
     'https://crlt.co/9tuQ',
     'https://cash-ads.com/?ref=3948',
     'https://jpconstruction.altervista.org',
     'https://cb.run/9KnF',
     'https://app.stormgain.com/friend/BNS14280379',
     'https://crlt.co/9tuQ',
+    'https://teespring.com/nature-maniac?tsmac=store&tsmic=awsomets-3&pid=389&cid=100019',
     'https://cb.run/EeX7',
     'https://cb.run/hoj0',
     'https://inorangepie.biz/12956821',
@@ -38,13 +38,14 @@ var links = [ //72
     'http://adsgamer.altervista.org/miner.html',
     'https://crlt.co/9tuQ',
     'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
+    'https://teespring.com/worldwide-survivor?tsmac=store&tsmic=awsomets-3&pid=879&cid=103789',
     'https://crlt.co/9tuQ',
     'https://app.stormgain.com/friend/BNS14280379',
     'https://r.honeygain.money/REIUT0A0',
     'http://adsgamer.altervista.org/miner.html',
     'http://adsgamer.altervista.org',
     'https://crlt.co/9tuQ',
+    'https://teespring.com/nature-maniac?tsmac=store&tsmic=awsomets-3&pid=793&cid=103543',
     'https://2captcha.com?from=8848127',
     'http://adsgamer.altervista.org/miner.html',
     'https://crlt.co/9tuQ',
@@ -56,6 +57,7 @@ var links = [ //72
     'https://radioearn.com/?ref=31176',
     'http://adsgamer.altervista.org/miner.html',
     'https://crlt.co/9tuQ',
+    'https://teespring.com/worldwide-survivor?tsmac=store&tsmic=awsomets-3&pid=377&cid=100057',
     'http://www.fiverr.com/s2/35d0de1b44',
     'http://join-shortest.com/ref/6570218369?user-type=new',
     'https://cb.run/8KuT',
@@ -66,6 +68,7 @@ var links = [ //72
     'https://crlt.co/9tuQ',
     'https://yllix.com/388948/',
     'https://crlt.co/9tuQ',
+    'https://teespring.com/it/stores/a-magliett',
     'https://crlt.co/9tuQ',
     'https://crypto-loot.com/ref.php?go=27e53831e7e7e9403c8ccda236435ac0',
     'https://crlt.co/9tuQ',
@@ -73,10 +76,21 @@ var links = [ //72
     'https://www.instagram.com/amagliett',
     'https://www.instagram.com/soothinglooks',
     'https://crlt.co/9tuQ',
+    'https://teespring.com/a-magliett?tsmac=store&tsmic=a-magliett&pid=793&cid=103538',
     'https://app.stormgain.com/friend/BNS14280379',
     'https://www.instagram.com/robertodidio_1',
     'http://adsgamer.altervista.org/miner.html',
     'https://app.stormgain.com/friend/BNS14280379',
+    'https://teespring.com/a-magliett?tsmac=store&tsmic=a-magliett&pid=793&cid=103538',
+    'https://teespring.com/nature-maniac?tsmac=store&tsmic=a-magliett&pid=389&cid=100019',
+    'https://teespring.com/mr-right-7808?tsmac=store&tsmic=a-magliett&pid=378&cid=100077',
+    'https://teespring.com/mr-right-7808?tsmac=store&tsmic=a-magliett&pid=793&cid=103539',
+    'https://teespring.com/mr-right-7808?tsmac=store&tsmic=a-magliett&pid=389&cid=100029',
+    'https://teespring.com/mr-right-7808?tsmac=store&tsmic=a-magliett&pid=755&cid=103338',
+    'https://teespring.com/it/stores/giosaiasperillo',
+    'https://teespring.com/record_2002?tsmac=store&tsmic=giosaiasperillo&pid=389&cid=100019',
+    'https://teespring.com/record_2002?tsmac=store&tsmic=giosaiasperillo&pid=793&cid=103543',
+    'https://teespring.com/record_2002?tsmac=store&tsmic=giosaiasperillo&pid=794&cid=103544',
 ]
 
 var ads1 = [ //23
@@ -167,38 +181,6 @@ function open_tickets() {
     ad1 = ads1[random_num];
     ad2 = ads1[random_num + 1];
     add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><h1>Purchase Tickets</h1><br><div class="columns"><ul class="price"><li class="header">20 tickets</li><li class="grey">$0,10</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">100 tickets</li><li class="grey">$0,50</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">200 tickets</li><li class="grey">$1,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 tickets</li><li class="grey">$5,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 tickets</li><li class="grey">$10,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 tickets</li><li class="grey">$50,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><br>' + ad2 + '<br><br></center>';
-}
-function open_account() {
-    remove_section();
-    remove_nav();
-    remove_footer();
-    var add = document.getElementById("add-section");
-    localStorage.getItem("email"); //import email
-    if (localStorage.getItem("email") == null) {
-        
-    }
-    else {
-        var email = localStorage.getItem("email");
-    }
-    localStorage.getItem("tot_points"); //import total points
-    if (localStorage.getItem("tot_points") == null) {
-        var tot_points = 0;
-        localStorage.setItem("tot_points", tot_points);
-    }
-    else {
-        var tot_points = localStorage.getItem("tot_points");
-    }
-    localStorage.getItem("tot_wins"); //import total wins
-    if (localStorage.getItem("tot_wins") == null) {
-        var tot_wins = 0;
-        localStorage.setItem("tot_wins", tot_wins);
-    }
-    else {
-        var tot_wins = localStorage.getItem("tot_wins");
-    }
-    random_num = Math.floor((Math.random() * 23) + 0);
-    ad1 = ads1[random_num];
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><br><br><br><h2>Email:<br><b>' + email + '</b></h2><br><br><h1>Payment Preferences</h1><br><br><h2>Total Earned Points:<br><b id="tot_points"></b></h2><br><h2>Total Winning Tickets:<br><b id="num_winning_tickets"></b></h2><br><br>' + ad1 + '<br><br></center>';
 }
 function open_about() {
     remove_section();
