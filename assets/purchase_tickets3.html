@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <br><br>
+            <h2 style="font-family: 'Heebo', sans-serif;">Purchase <b>200</b> tickets</h2>
+            <br>
+            <script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=468x60&ga=g"></script>
+            <noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/468x60.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>
+            <br><br>
+            <div id="paypal-button"></div>
+            <br>
+            <!--BTC-->
+            <br>
+            <!--ETH-->
+            <br>
+            <!--BCH-->
+            <br>
+            <br>
+            <script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=468x60&ga=g"></script>
+            <noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/468x60.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>
+            <br>
+            <br>
+        </center>
+        
+
+        <!--PayPal checkout-->
+        <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+        <script>
+            paypal.Button.render({
+                env: 'production',
+                client: {
+                    production: 'AfeQ7jWhqD9c9Jg2bH8Wp7b4mf142K-bMkbxqlgavWeByr-1bdgIvxKwrBf7WxktVhnDqr2u8TAnN_qj'
+                },
+                locale: 'en_US',
+                style: {
+                size: 'medium',
+                color: 'black',
+                shape: 'pill',
+                },
+                commit: true,
+                payment: function(data, actions) {
+                    return actions.payment.create({
+                        transactions: [{
+                        amount: {
+                            total: '1.00',
+                            currency: 'USD'
+                        }
+                        }]
+                    });
+                },
+                onAuthorize: function(data, actions) {
+                    return actions.payment.execute().then(function() {
+                        window.alert('Thank you for your purchase!');
+                        if (localStorage.getItem("tickets") == null) {
+                            balance = 200;
+                            localStorage.setItem("tickets", balance);
+                        }
+                        else {
+                            var lcl = localStorage.getItem("tickets");
+                            balance = JSON.parse(lcl) + 200;
+                            localStorage.setItem("tickets", balance);
+                        }
+                        var add_tickets = document.getElementById("ticket_num");
+                        add_tickets.innerHTML = balance;
+                    });
+                }
+            }, '#paypal-button');
+        </script>
+    </body>
+</html>

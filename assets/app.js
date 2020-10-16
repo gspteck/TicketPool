@@ -346,7 +346,7 @@ function open_tickets() {
     random_num = Math.floor((Math.random() * 167) + 0);
     ad1 = ads1[random_num];
     ad2 = ads1[random_num + 1];
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><h1>Purchase Tickets</h1><br><div class="columns"><ul class="price"><li class="header">20 tickets</li><li class="grey">$0,10</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">100 tickets</li><li class="grey">$0,50</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">200 tickets</li><li class="grey">$1,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 tickets</li><li class="grey">$5,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 tickets</li><li class="grey">$10,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 tickets</li><li class="grey">$50,00</li><li class="grey"><a href="#" class="button">Purchase</a></li></ul></div><br>' + ad2 + '<br><br></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><h1>Purchase Tickets</h1><br><div class="columns"><ul class="price"><li class="header">20 tickets</li><li class="grey">$0,10</li><li class="grey"><button class="button" onclick="purchase_tickets1()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">100 tickets</li><li class="grey">$0,50</li><li class="grey"><button class="button" onclick="purchase_tickets2()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">200 tickets</li><li class="grey">$1,00</li><li class="grey"><button class="button" onclick="purchase_tickets3()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 tickets</li><li class="grey">$5,00</li><li class="grey"><button class="button" onclick="purchase_tickets4()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 tickets</li><li class="grey">$10,00</li><li class="grey"><button class="button" onclick="purchase_tickets5()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 tickets</li><li class="grey">$50,00</li><li class="grey"><button class="button" onclick="purchase_tickets6()" style="cursor: pointer">Purchase</button></li></ul></div><br>' + ad2 + '<br><br></center>';
 }
 function open_about() {
     remove_section();
@@ -375,10 +375,37 @@ function tickets() {
     setTimeout(() => {
         localStorage.setItem("tickets", balance);
         add.innerHTML = balance;
-        tickets();
     }, 600000);
-    
+    tickets();
 }
-function extraction() {
-
+//Open Ticket Purchase links
+function purchase_tickets1() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    window.open('./assets/purchase_tickets1.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_tickets2() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    window.open('./assets/purchase_tickets2.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_tickets3() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    window.open('./assets/purchase_tickets3.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_tickets4() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    window.open('./assets/purchase_tickets4.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_tickets5() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    window.open('./assets/purchase_tickets5.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_tickets6() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    window.open('./assets/purchase_tickets6.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
 }
