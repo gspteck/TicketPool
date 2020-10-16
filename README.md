@@ -14,6 +14,8 @@ The videos displayed in the YouTube playlist embeded in this software are not ac
 
 ## Other
 
+Support us by buying awsome merch on our [Teespring page](https://teespring.com/it/stores/gspteck-2).
+
 Having problems with the code? Any suggestions for improvements or ideas for future projects? 
 Please go to our "contact" page on our [website](https://gspteck.wixsite.com/gspteck/) and send us a message.
 We will review it and try our best to fix the code.
