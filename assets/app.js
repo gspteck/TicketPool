@@ -313,6 +313,7 @@ var ads1 = [ //167
 ]
 
 var balance = 0;
+var winnings = 0;
 localStorage.getItem("tickets");
 if (localStorage.getItem("tickets") == null) {
     balance = 0;
@@ -342,6 +343,20 @@ function open_tickets() {
     remove_section();
     remove_nav();
     remove_footer();
+    localStorage.getItem("auto_extr");
+    if (localStorage.getItem("auto_extr") == null) {
+        var auto_extr = 0;
+        localStorage.getItem("auto_extr", auto_extr);
+    }
+    else {
+        var auto_extr = JSON.parse(localStorage.getItem("auto_extr"));
+        if (auto_extr = 1) {
+
+        }
+        else {
+
+        }
+    }
     var add = document.getElementById("add-section");
     random_num = Math.floor((Math.random() * 167) + 0);
     ad1 = ads1[random_num];
@@ -408,4 +423,44 @@ function purchase_tickets6() {
     var left = (screen.width - 500) / 2;
     var top = (screen.height - 750) / 4;
     window.open('./assets/purchase_tickets6.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+//
+function extract_ticket() { //extract 1 ticket
+    var result = document.getElementById('result');
+    var win_or_lose = document.getElementById('win-or-lose');
+    var tickets = document.getElementById("earn_balance");
+    balance = balance - 1;
+    localStorage.setItem("tickets", balance);
+    tickets.innerHTML = balance;
+    winning_num = Math.floor((Math.random() * 100) + 0);
+    random_num = Math.floor((Math.random() * 100) + 0);
+    if (random_num == winning_num) {
+        result.innerHTML = random_num;
+        win_or_lose.innerHTML = 'WIN';
+    }
+    else {
+        result.innerHTML = random_num;
+        win_or_lose.innerHTML = 'LOSE';
+    }
+}
+function auto_extract() {
+    var result1 = document.getElementById('result');
+    var win_or_lose = document.getElementById('win-or-lose');
+    var tickets = document.getElementById("earn_balance");
+    balance = balance - 1;
+    localStorage.setItem("tickets", balance);
+    tickets.innerHTML = balance;
+    winning_num = Math.floor((Math.random() * 100) + 0);
+    random_num = Math.floor((Math.random() * 100) + 0);
+    if (random_num == winning_num) {
+        result.innerHTML = random_num;
+        win_or_lose.innerHTML = 'WIN';
+        result4.innerHTML = '';
+    }
+    else {
+        result.innerHTML = random_num;
+        win_or_lose.innerHTML = 'LOSE';
+        result4.innerHTML = '';
+    }
+    setTimeout(() => { auto_extract(); }, 3000);
 }

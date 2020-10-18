@@ -218,26 +218,7 @@ footer {
     }
 }
 /*End price tables*/
-.win-text {
-    font-size: 70px;
-    font-family: 'Heebo', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-.win-background {
-    background: #d37b66;
-    width: 70rem;
-    height: 40rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -0.5;   
-}
-.win-button {
+.extract-button {
     background-color:#d37b66;
     color: white;
     padding: 10px 21px;
@@ -246,21 +227,7 @@ footer {
     display: inline-block;
     font-size: 25px;
     font-family: 'Heebo', sans-serif;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -40%);
     border-radius: 30px;
     border: 2px solid #612a1d;
     cursor: pointer;
-    z-index: -0.5;     
-}
-.win-disclaimer {
-    font-size: 15px;
-    font-family: 'Heebo', sans-serif;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    z-index: -0.5;     
 }
