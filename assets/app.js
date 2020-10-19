@@ -313,7 +313,6 @@ var ads1 = [ //167
 ]
 
 var balance = 0;
-var winnings = 0;
 localStorage.getItem("tickets");
 if (localStorage.getItem("tickets") == null) {
     balance = 0;
@@ -325,7 +324,6 @@ else {
 }
 var add_tickets = document.getElementById("ticket_num");
 add_tickets.innerHTML = balance;
-
 
 function remove_section() {
     var element = document.getElementById('home-section');
@@ -339,29 +337,16 @@ function remove_footer() {
     var element = document.getElementById('footer');
     element.parentNode.removeChild(element);
 }
+
 function open_tickets() {
     remove_section();
     remove_nav();
     remove_footer();
-    localStorage.getItem("auto_extr");
-    if (localStorage.getItem("auto_extr") == null) {
-        var auto_extr = 0;
-        localStorage.getItem("auto_extr", auto_extr);
-    }
-    else {
-        var auto_extr = JSON.parse(localStorage.getItem("auto_extr"));
-        if (auto_extr = 1) {
-
-        }
-        else {
-
-        }
-    }
     var add = document.getElementById("add-section");
     random_num = Math.floor((Math.random() * 167) + 0);
     ad1 = ads1[random_num];
     ad2 = ads1[random_num + 1];
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><h1>Purchase Tickets</h1><br><div class="columns"><ul class="price"><li class="header">20 tickets</li><li class="grey">$0,10</li><li class="grey"><button class="button" onclick="purchase_tickets1()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">100 tickets</li><li class="grey">$0,50</li><li class="grey"><button class="button" onclick="purchase_tickets2()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">200 tickets</li><li class="grey">$1,00</li><li class="grey"><button class="button" onclick="purchase_tickets3()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 tickets</li><li class="grey">$5,00</li><li class="grey"><button class="button" onclick="purchase_tickets4()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 tickets</li><li class="grey">$10,00</li><li class="grey"><button class="button" onclick="purchase_tickets5()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 tickets</li><li class="grey">$50,00</li><li class="grey"><button class="button" onclick="purchase_tickets6()" style="cursor: pointer">Purchase</button></li></ul></div><br>' + ad2 + '<br><br></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><br><h1>Extract Tickets</h1><br><button class="extract-button" onclick="extract_ticket()">Extract 1 Ticket</button><br><br><div><h2 id="result"></h2></div><div><b id="win-or-lose"></b></div><br><br><br><h1>Purchase Tickets</h1><br><div class="columns"><ul class="price"><li class="header">20 tickets</li><li class="grey">$0,10</li><li class="grey"><button class="button" onclick="purchase_tickets1()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">100 tickets</li><li class="grey">$0,50</li><li class="grey"><button class="button" onclick="purchase_tickets2()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">200 tickets</li><li class="grey">$1,00</li><li class="grey"><button class="button" onclick="purchase_tickets3()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 tickets</li><li class="grey">$5,00</li><li class="grey"><button class="button" onclick="purchase_tickets4()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 tickets</li><li class="grey">$10,00</li><li class="grey"><button class="button" onclick="purchase_tickets5()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 tickets</li><li class="grey">$50,00</li><li class="grey"><button class="button" onclick="purchase_tickets6()" style="cursor: pointer">Purchase</button></li></ul></div><br>' + ad2 + '<br><br></center>';
 }
 function open_about() {
     remove_section();
@@ -381,19 +366,14 @@ function open_earn() {
     window.open(link);
     tickets();
 }
-function back_home() {
-    location.reload();
-}
+
 function tickets() {
     var add = document.getElementById("earn_balance");
     balance = balance + 2;
-    setTimeout(() => {
-        localStorage.setItem("tickets", balance);
-        add.innerHTML = balance;
-    }, 600000);
-    tickets();
+    localStorage.setItem("tickets", balance);
+    add.innerHTML = balance;
+    setTimeout(() => {tickets();}, 600000);
 }
-//Open Ticket Purchase links
 function purchase_tickets1() {
     var left = (screen.width - 500) / 2;
     var top = (screen.height - 750) / 4;
@@ -424,43 +404,31 @@ function purchase_tickets6() {
     var top = (screen.height - 750) / 4;
     window.open('./assets/purchase_tickets6.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
 }
-//
+
 function extract_ticket() { //extract 1 ticket
     var result = document.getElementById('result');
     var win_or_lose = document.getElementById('win-or-lose');
     var tickets = document.getElementById("earn_balance");
-    balance = balance - 1;
-    localStorage.setItem("tickets", balance);
-    tickets.innerHTML = balance;
-    winning_num = Math.floor((Math.random() * 100) + 0);
-    random_num = Math.floor((Math.random() * 100) + 0);
-    if (random_num == winning_num) {
-        result.innerHTML = random_num;
-        win_or_lose.innerHTML = 'WIN';
+    if (balance == 0) {
+        result.innerHTML = 'You have no tickets.'
     }
     else {
-        result.innerHTML = random_num;
-        win_or_lose.innerHTML = 'LOSE';
+        balance = balance - 1;
+        localStorage.setItem("tickets", balance);
+        tickets.innerHTML = balance;
+        random_num = Math.floor((Math.random() * 100) + 0);
+        winning_num = Math.floor((Math.random() * 100) + 0);
+        if (random_num == winning_num) {
+            result.innerHTML = random_num;
+            win_or_lose.innerHTML = 'WIN';
+        }
+        else {
+            result.innerHTML = random_num;
+            win_or_lose.innerHTML = 'LOSE';
+        }
     }
 }
-function auto_extract() {
-    var result1 = document.getElementById('result');
-    var win_or_lose = document.getElementById('win-or-lose');
-    var tickets = document.getElementById("earn_balance");
-    balance = balance - 1;
-    localStorage.setItem("tickets", balance);
-    tickets.innerHTML = balance;
-    winning_num = Math.floor((Math.random() * 100) + 0);
-    random_num = Math.floor((Math.random() * 100) + 0);
-    if (random_num == winning_num) {
-        result.innerHTML = random_num;
-        win_or_lose.innerHTML = 'WIN';
-        result4.innerHTML = '';
-    }
-    else {
-        result.innerHTML = random_num;
-        win_or_lose.innerHTML = 'LOSE';
-        result4.innerHTML = '';
-    }
-    setTimeout(() => { auto_extract(); }, 3000);
+
+function back_home() {
+    location.reload();
 }
