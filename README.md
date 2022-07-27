@@ -16,23 +16,21 @@ The videos displayed in the YouTube playlist embeded in this software are not ac
 
 Support us by buying awsome merch on our [Teespring page](https://teespring.com/it/stores/gspteck-2).
 
-Having problems with the code? Any suggestions for improvements or ideas for future projects? 
-Please go to our "contact" page on our [website](https://gspteck.wixsite.com/gspteck/) and send us a message.
+If you find any problems with code or have ANY suggestions for improvements and/or ideas for future projects,
+Please send us an email at 'gspteck@gmail.com'.
 We will review it and try our best to fix the code.
 
 Want to support us?
 
-BTC: 1qTAq1nMrtMzAZzAYzBMkZhbmcgANT7rB
+BTC: 1Q1ZFsZCXhan1QG9Su1S9xEX75WpecYE3C
 
-ETH: 0x17E0a2AE9C4Ff4555E62A34eF7E0b21e88935b51
+ETH: 0x3F21aBAd969f9c8B18975B8cb9f039569bF10f0D
 
-BCH: qq5gnn2dyeex4rpjqauqu7m7jk0vjq09puxhhduz4y
+BCH: bitcoincash:qrdv0y0lgasxs39kwmuvglsduztvmpcrhc24t68p8a
 
 PayPal: [gspteck@gmail.com](https://paypal.me/gspteck)
 
-Or just credit us when you use our code (very much appreciated as well).
-
-
+or just credit us when you use our code (very much appreciated as well).
 
 Sincerely,
-the GSPTeck team.
+GSPTeck
