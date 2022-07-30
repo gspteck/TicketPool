@@ -1,4 +1,4 @@
-### TicketPool
+# TicketPool
 
 TicketPool was created using [ElectronJS](https://www.electronjs.org) - [GitHub Repository](https://github.com/electron)
 
